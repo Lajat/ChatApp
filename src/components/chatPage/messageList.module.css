@@ -1,0 +1,24 @@
+.main {
+    background-color: thistle;
+}
+.senderID {
+    text-align: left;
+    background-color: lightblue;
+}
+.receiverID {
+    text-align: left;
+    background-color: lightcyan;
+}
+.textWrapper {
+    text-align: left;
+    padding: 12px 0px 20px 0px;
+}
+.text {
+    text-align: left;
+    background-color: coral;
+    font-size: 20px;
+    margin-left: 25px;
+    padding: 10px 10px 15px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

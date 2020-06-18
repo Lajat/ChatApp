@@ -1,0 +1,78 @@
+.pageLayout {
+    background-color: teal;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 70px auto 70px;
+    grid-gap: 12px 10px;
+    grid-template-areas: "topbar topbar"
+    "leftside rightside"
+    "left2 right2";
+}
+.topbar {
+    background-color: cadetblue;
+    grid-area: topbar;
+}
+.leftside {
+    background-color: lightgreen;
+    grid-area: leftside;
+    margin-left: 10px;
+    overflow-y: auto;
+}
+/* width */
+.leftside::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.leftside::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .leftside::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .leftside::-webkit-scrollbar-thumb:hover {
+    background: cadetblue;
+  }
+.rightside {
+    background-color: lightsalmon;
+    grid-area: rightside;
+    /* margin-right: 10px; */
+    overflow-y: auto;
+}
+/* width */
+.rightside::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .rightside::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .rightside::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .rightside::-webkit-scrollbar-thumb:hover {
+    background: cadetblue;
+  }
+.addParticipants {
+    background-color: gray;
+    grid-area: left2;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.sendMessageForm {
+    background-color: whitesmoke;
+    grid-area: right2;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
